@@ -3,12 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { QuotesComponent } from './quotes/quotes.component';
 // import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteFormComponent,
+    QuotesComponent,
     // ReactiveFormsComponent
   ],
   imports: [
@@ -17,4 +19,6 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+ }

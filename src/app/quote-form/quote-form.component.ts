@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-
 @Component({
   selector: 'app-quote-form',
   templateUrl: './quote-form.component.html',
