@@ -8,8 +8,8 @@ import {Quotes} from '../quotes';
 })
 export class QuotesComponent implements OnInit {
   quotes = [
-    new Quotes( 1, 'do it or die trying', 'zayn', new Date(2019, 1, 11) ),
-    // new Quotes(2, 'You cant Depend on your eyes when your imagination is out of focus', '', new Date('')),
+    // new Quotes( 1, 'do it or die trying', 'zayn', new Date(2019, 1, 11) ),
+
   ];
   toogleDetails(index) {
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
