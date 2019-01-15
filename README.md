@@ -4,9 +4,13 @@ https://drewheathens.github.io/quotes/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
 
-##AUTHORS
+## AUTHOR
 
 evans mudavadi
+
+## description
+
+Quotes allow user to customise their own inspirational quote(s), after adding the quotes they can be voted upon, and deleted if no longer useful. 
 
 ## Development server
 
