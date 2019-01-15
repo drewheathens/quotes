@@ -18,10 +18,10 @@
 
 
 <div *ngFor='let quote of quotes;let i = index'>
-  <p  class="text-danger" id="{{i}}" appStrikethrough>{{quote.name}} written on: {{quote.completeDate|date}}</p>
+  <p  class="text-danger" id="{{i}}" appStrikethrough>{{quote.name}}</p>
 
-  <button  (click)='toogleDetails(i)' class="btn btn-success" > <img src="src/assets/image.jpeg">
-    AUTHOR</button>
+  <button  (click)='toogleDetails(i)' class="btn btn-success">
+    NAME</button>
 
 
   <app-quotes-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'completeQuotes($event,i)'></app-quotes-details>
@@ -29,8 +29,8 @@
 
 <div class="col-md-2">
 
-    <button (click)="upvote(i)" class="vote-btn">upvote:{{quote.upvotes}}</button>
-    <button (click)="downvote(i)" class="vote-btn">downvote:{{quote.downvotes}}</button>
+    <button (click)="upvote(i)" class="vote-btn" class="btn btn-success" >upvote:{{quote.upvotes}}</button>
+    <button (click)="downvote(i)" class="vote-btn" class="btn btn-danger">downvote:{{quote.downvotes}}</button>
 </div>
   </div>
     </div>
