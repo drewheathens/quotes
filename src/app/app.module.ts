@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { QuotesComponent } from './quotes/quotes.component';
+import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 // import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 
 @NgModule({
@@ -11,10 +12,13 @@ import { QuotesComponent } from './quotes/quotes.component';
     AppComponent,
     QuoteFormComponent,
     QuotesComponent,
+    QuoteDetailsComponent,
     // ReactiveFormsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    // quote-FormModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

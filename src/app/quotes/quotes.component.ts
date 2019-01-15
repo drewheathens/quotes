@@ -7,8 +7,12 @@ import {Quotes} from '../quotes'
 })
 export class QuotesComponent {
     polo = [
-        new Quotes(1,'Watch Finding Nemo'),
-        new Quotes(2,'Buy Cookies'),
+        new Quotes(1,'never walk alone'),
+        new Quotes(2,'work hard, play hard'),
 
     ]
+    constructor() { }
+
+  ngOnInit() {
+  }
 }
