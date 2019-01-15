@@ -1,7 +1,8 @@
-
 <div class="app">
 
-<div class="panel-heading"><h1>QUOTE IN</h1> </div>
+  <div class="panel-heading">
+    <h1>QUOTE IN</h1>
+  </div>
 </div>
 <hr>
 <div class="container-fluid">
@@ -13,27 +14,68 @@
     </div>
 
 
-<div class="col-md-6">
+    <div class="col-md-6">
 
 
 
-<div *ngFor='let quote of quotes;let i = index'>
-  <p  class="text-danger" id="{{i}}" appStrikethrough>{{quote.name}}</p>
+      <div *ngFor='let quote of quotes;let i = index'>
+        <p class="text-danger" id="{{i}}" appStrikethrough>{{quote.name}}</p>
 
-  <button  (click)='toogleDetails(i)' class="btn btn-success">
-    NAME</button>
-
-
-  <app-quotes-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'completeQuotes($event,i)'></app-quotes-details>
+        <button (click)='toogleDetails(i)' class="btn btn-success">
+          NAME</button>
 
 
-<div class="col-md-2">
+        <app-quotes-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)='completeQuotes($event,i)'></app-quotes-details>
 
-    <button (click)="upvote(i)" class="vote-btn" class="btn btn-success" >upvote:{{quote.upvotes}}</button>
-    <button (click)="downvote(i)" class="vote-btn" class="btn btn-danger">downvote:{{quote.downvotes}}</button>
-</div>
-  </div>
+
+        <div class="col-md-2">
+
+          <button (click)="upvote(i)" class="vote-btn" class="btn btn-success">upvote:{{quote.upvotes}}</button>
+          <button (click)="downvote(i)" class="vote-btn" class="btn btn-danger">downvote:{{quote.downvotes}}</button>
+        </div>
+      </div>
+    </div>
+    <div class="app">
+
+      <div class="panel-heading">
+        <h1>QUOTE IN</h1>
+      </div>
+    </div>
+    <hr>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+
+
+          <app-quotes-form (addQuotes)="addNewQuotes($event)"></app-quotes-form>
+        </div>
+
+
+        <div class="col-md-6">
+
+
+
+          <div *ngFor='let quote of quotes;let i = index'>
+            <p class="text-danger" id="{{i}}" appStrikethrough>{{quote.name}}</p>
+
+            <button (click)='toogleDetails(i)' class="btn btn-success">
+              NAME</button>
+
+
+            <app-quotes-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)='completeQuotes($event,i)'></app-quotes-details>
+
+
+            <div class="col-md-2">
+
+              <button (click)="upvote(i)" class="vote-btn" class="btn btn-success">upvote:{{quote.upvotes}}</button>
+              <button (click)="downvote(i)" class="vote-btn" class="btn btn-danger">downvote:{{quote.downvotes}}</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
 
+
   </div>
-  </div>
+</div>
