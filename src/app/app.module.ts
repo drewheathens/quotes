@@ -1,28 +1,30 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+ 
 
-import { AppComponent } from './app.component';
-import { QuoteFormComponent } from './quote-form/quote-form.component';
-import { QuotesComponent } from './quotes/quotes.component';
-import { QuoteDetailsComponent } from './quote-details/quote-details.component';
-// import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
+ import { AppComponent } from './app.component';
+ import { QuotesComponent } from './quotes/quotes.component';
+ import { QuotesDetailsComponent } from './quotes-details/quotes-details.component';
+ import { DateCountPipe } from './date-count.pipe';
+ import { QuotesFormComponent } from './quotes-form/quotes-form.component';
+ import { StrikethroughDirective } from './strikethrough.directive';
 
-@NgModule({
+ @NgModule({
   declarations: [
-    AppComponent,
-    QuoteFormComponent,
+     AppComponent,
     QuotesComponent,
-    QuoteDetailsComponent,
-    // ReactiveFormsComponent
-  ],
+    QuotesDetailsComponent,
+    DateCountPipe,
+    QuotesFormComponent,
+    StrikethroughDirective,
+
+     ],
   imports: [
     BrowserModule,
-    // quote-FormModule
-
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-
- }
+export class AppModule { }
