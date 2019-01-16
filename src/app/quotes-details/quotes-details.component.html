@@ -1,5 +1,10 @@
-<div>
-  <p class="text-info">{{quote.description}}</p>
+  <br>
+  <p>Author: {{quote.description}}</p>
+  <p>Days since submission: {{quote.completeDate|dateCount}} </p>
   <div>
-    <button class="text-danger" (click)='quoteComplete(true)'> Delete </button>
+    <div class="btn-group">
+      <button (click)="upVote()" class="vote-btn" class="btn btn-sm btn-success">Upvotes: {{up}}</button>
+      <button (click)="downVote()" class="vote-btn" class="btn btn-sm btn-warning">Downvotes: {{down}}</button>
+      <button class="text-danger" (click)='quoteComplete(true)' class="btn btn-sm btn-danger"> Delete </button>
+    </div>
   </div>

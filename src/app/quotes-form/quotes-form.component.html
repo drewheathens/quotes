@@ -1,39 +1,24 @@
+<div class="left-side">
+<div class="jumbotron">
 
-<!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-	</head>
-	<body>
-		<main class="quote">
-			<div class="container-fluid">
-				<div class="jumbotron">
+<form id="form" (ngSubmit)='submitQuotes()' #quoteForm='ngForm'>
 
-					<div class="row">
-						<form (ngSubmit)='submitQuotes()' #quoteForm='ngForm'>
-							<div class="form-group">
+	<div class="form-group">
+		<label for="name">QUOTE</label>
+		<textarea type="text" required class="form-control" id="name" [(ngModel)]="newQuotes.name" name="name" #name="ngModel" required></textarea>
+	</div>
+	<div class="form-group">
+		<label for="description">AUTHOR</label>
+		<input class="form-control" id="description" rows="9" [(ngModel)]="newQuotes.description" name="description" #description="ngModel" required>
+	</div>
+	<div class="form-group">
+	<label for="timecount">DATE</label>
+	<input class="form-control" id="timecount" type="date" [(ngModel)]="newQuotes.completeDate" name="completeDate" #timecount="ngModel" required>
 
-								<label for="name">QUOTE</label>
-								<textarea type="text" required class="form-control" id="name" [(ngModel)]="newQuotes.name" name="name" #name="ngModel" required></textarea>
+	</div>
 
+	<button type="submit" class="btn btn-sm btn-primary" name="button">ADD</button>
 
-
-							</div>
-							<div class="form-group">
-
-								<label for="description">NAME</label>
-
-								<input class="form-control" id="description" rows="4" [(ngModel)]="newQuotes.description" name="description" #description="ngModel" required>
-
-							</div>
-
-							<button type="submit" class="btn btn-info btn-success" name="button">ADD</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</main>
-	</body>
-</html>
+</form>
+</div>
+</div>

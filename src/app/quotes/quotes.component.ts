@@ -7,10 +7,8 @@ import {Quotes} from '../quotes';
   styleUrls: ['./quotes.component.css']
 })
 export class QuotesComponent implements OnInit {
-  quotes = [
-    // new Quotes( 1, 'do it or die trying', 'zayn', new Date(2019, 1, 11) ),
+  quotes = [];
 
-  ];
   toogleDetails(index) {
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
@@ -28,12 +26,7 @@ export class QuotesComponent implements OnInit {
           quote.completeDate = new Date(quote.completeDate);
           this.quotes.push(quote);
         }
-        upvote(id) {
-          this.quotes[id].upvotes += 1;
-        }
-        downvote(id) {
-          this.quotes[id].downvotes += 1;
-        }
+      
    constructor() {}
 
   ngOnInit() {
