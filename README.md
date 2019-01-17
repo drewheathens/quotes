@@ -1,40 +1,43 @@
-# Quotes
+# **QUOTES**
+An online dice game where two players get to compete.
 
-https://drewheathens.github.io/quotes/
+# **BDD**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
+| *BEHAVIOUR*        |  *INPUT*       |  *OUTPUT*      |
+|-----------------|-------------|-------------|
+|Display form where author inputs name and the quote.|clicks add button.|display the quote, author name, day(s) since submission, upvotes & downvotes and the delete button.|
 
-## AUTHOR
 
-evans mudavadi
 
-## description
+# **INSTALLATION**
 
-Quotes allow user to customise their own inspirational quote(s), after adding the quotes they can be voted upon, and deleted if no longer useful. 
+clone this repository to a location in your computer, from there you should be able to run ng serve command in terminal at any time. the local server runs it on your web browser. or visit https://drewheathens.github.io/quotes/
 
-## Development server
+# **USAGE**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+All that's required of the user is to input quote, author name press add button, your quote and details will be displayed.
 
-## Code scaffolding
+# **TECHNOLOGIES USED**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+-typescript
 
-## Build
+-css
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+-html
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+# **PROJECT STATUS**
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+The project is still under development.
 
-## Further help
+# **CONTRIBUTION**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+When contributing to this repository, please first discuss the change you wish to make via issue.
+
+# **AUTHORS**
+
+_EVANS MUDAVADI_.
 
 # **LICENSING**
 
