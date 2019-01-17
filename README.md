@@ -25,6 +25,8 @@ All that's required of the user is to input quote, author name press add button,
 
 -html
 
+-Angular
+
 
 
 # **PROJECT STATUS**
